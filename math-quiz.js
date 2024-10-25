@@ -30,3 +30,22 @@ const quiz_list = [
         q_point: 3,
     },
 ]
+
+let score = 0
+
+quiz_list.forEach((quiz) => {
+    const userPrompt = prompt(`
+        \t Quiz Number : ${quiz.q_num}\n
+        \t What is result of : ${quiz.q_body} ?\n
+        \t Quiz Point : ${quiz.q_point}
+        `)
+    
+    if (userPrompt == quiz.q_ansewr) {
+        score += quiz.q_point
+        alert(`Great! 😍 \n Your score is now : ${score}`)
+    } else {
+        alert(`Wrong! 😔 \n Your score is now : ${score}`)
+    }
+})
+
+alert(`~~~~~~~~~~~~~~~~~~~ \n FINSIH \n ~~~~~~~~~~~~~~~~~~~ \n\t Your finall sccore is : ${score}`)
