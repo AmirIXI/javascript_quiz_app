@@ -49,3 +49,5 @@ quiz_list.forEach((quiz) => {
 })
 
 alert(`~~~~~~~~~~~~~~~~~~~ \n FINSIH \n ~~~~~~~~~~~~~~~~~~~ \n\t Your finall sccore is : ${score}`)
+
+// jsut for fun UwU
